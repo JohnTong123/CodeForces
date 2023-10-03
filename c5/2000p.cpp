@@ -11,12 +11,16 @@ int main() {
     int  numCases;
     cin >>numCases; 
     for (int i = 0;i<numCases;i++){
-        long long n,m ; cin>>n>>m;
-        if(n % 2 != 0  && n %m != 0){
-            cout<<-1<<endl;
+        map<int,int> values;
+        long long n,k ; cin>>n>>k;
+        for(int i = 0 ;i < k; i++){
+            int val; cin>>val;
+            values[val]++;
         }
-        else if (n)
-        cout<<sum<<endl;
+        while(k>0){
+
+        }
+        cout (values.end()-1)->second;
     }
     return 0;
 }
