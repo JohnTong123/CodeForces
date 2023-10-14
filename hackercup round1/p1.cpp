@@ -15,7 +15,7 @@ void setIO(string name = "") {
 
 int main()
 {
-    setIO("here_comes_santa_claus_input");
+    setIO("here_comes_santa_claus_validation_input(1)");
     int numCases; cin>>numCases; 
     for(int i =1; i< numCases+1; i++){
         int numToys; cin>>numToys;
@@ -28,16 +28,6 @@ int main()
 
         if (numToys == 5){
             cout<<"Case #" << i<<": "<< max(-(elves[0] + elves[2])/2 +(elves[3] + elves[4])/2,-(elves[0] + elves[1])/2 +(elves[2] + elves[4])/2)<<endl;
-
-            // float firstedge = elves[2] - elves[0];
-            // float lastedge = elves[elves.size()-1] - elves[elves.size()-3];
-            // if (firstedge<lastedge){
-            //         cout<<"Case #" << i<<": "<< -(elves[0] + elves[2])/2 +(elves[elves.size()-1] + elves[elves.size()-2])/2<<endl;
-
-            //     }
-            // else{
-            //     cout<<"Case #" << i<<": "<< -(elves[0] + elves[1])/2 +(elves[elves.size()-1] + elves[elves.size()-3])/2<<endl;
-            // }
         }
         else{
              cout<<"Case #" << i<<": "<< -(elves[0] + elves[1])/2 +(elves[elves.size()-1] + elves[elves.size()-2])/2<<endl;
